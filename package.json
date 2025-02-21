@@ -8,6 +8,7 @@
     "description": "TVM BoC disassembler",
     "scripts": {
         "build": "tsc --declaration && yarn run copy:fift",
+        "prepare": "pnpm build",
         "copy:fift": "ts-node src/fift/copy.build.ts",
         "fmt": "prettier --write -l --cache .",
         "fmt:check": "prettier --check --cache .",
